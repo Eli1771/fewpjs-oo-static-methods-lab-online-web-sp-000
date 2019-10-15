@@ -11,5 +11,9 @@ class Formatter {
   
   static titleize(s) {
     let words = s.split(' ');
+    words[0].charAt(0).toUpperCase();
+    for (let i = 1; i < words.length; i++) {
+      
+    }
   }
 }
