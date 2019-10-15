@@ -9,7 +9,7 @@ class Formatter {
     return s.replace(/[^A-Za-z0-9-' ]+/g, '');
   }
   
-  static titleize() {
-    
+  static titleize(s) {
+    let words = s.split(' ');
   }
 }
