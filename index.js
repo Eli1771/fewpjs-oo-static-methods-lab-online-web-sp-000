@@ -14,7 +14,7 @@ class Formatter {
     words[0] = this.capitalize(words[0]);
     for (let i = 1; i < words.length; i++) {
       if (!words[i].match(/(a|an|but|of|and|for|at|by|and|from)/)) {
-        this.capitalize(words[i]);
+        words[i] = this.capitalize(words[i]);
       }
     }
     return words.join(' ');
