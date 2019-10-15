@@ -10,6 +10,7 @@ class Formatter {
   }
   
   static titleize(s) {
+    //const lowers = ['the', 'a', 'an', 'but', 'of', 'and', 'for', 'at', 'by', 'from'];
     let words = s.split(' ');
     words[0] = this.capitalize(words[0]);
     for (let i = 1; i < words.length; i++) {
