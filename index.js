@@ -12,7 +12,7 @@ class Formatter {
   static titleize(s) {
     let words = s.split(' ');
     words[0] = this.capitalize(words[0]);
-    for (let i = 1; i <= words.length; i++) {
+    for (let i = 1; i < words.length; i++) {
       if (!words[i].match(/(the|a|an|but|of|and|for|at|by|from)/)) {
         words[i] = this.capitalize(words[i]);
       }
