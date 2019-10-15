@@ -10,11 +10,11 @@ class Formatter {
   }
   
   static titleize(s) {
-    //const lowers = ['the', 'a', 'an', 'but', 'of', 'and', 'for', 'at', 'by', 'from'];
+    const lowers = ['the', 'a', 'an', 'but', 'of', 'and', 'for', 'at', 'by', 'from'];
     let words = s.split(' ');
     words[0] = this.capitalize(words[0]);
     for (let i = 1; i < words.length; i++) {
-      if (!words[i].match(/(the|a|an|but|of|and|for|at|by|from)/)) {
+      if (!lowers.find(w => w === words[i])) {
         words[i] = this.capitalize(words[i]);
       }
     }
