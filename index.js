@@ -6,6 +6,6 @@ class Formatter {
   }
   
   static sanitize(s) {
-    s = s.replace(/[^a-zA-Z0-9-' ]/, '');
+    s = s.replace(/[^a-zA-Z0-9-' ]+/g/, '');
   }
 }
